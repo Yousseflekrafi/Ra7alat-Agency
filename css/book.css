@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #7F8C8D;
+    background-color: #F5F5F5;
+}
+
+.seperator{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Header */
+header .container .icon img{
+    float: left;
+    width: 80px;
+    height: auto;
+}
+
+/* body title */
+body h1{
+    color: #c2b280;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+}
+.carrousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+}
+.image-track {
+    animation: scroll-left 40s linear infinite;
+    display: flex;
+    align-items: center;
+}
+.images {
+    width: 200px;
+    height: 300px; 
+}
+.images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      
+}
+@keyframes scroll-left {
+    to{
+        translate: calc(-5*250px);
+    }
+}
+
+
+/* Price */
+
+.priceTable {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Each pricing card */
+.pricingCard {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricingCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Header with plan name and price */
+.priceHeader {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.planName {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.4rem;
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.price span {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Features list */
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.features li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.features span {
+  font-weight: 600;
+  margin-right: 0.3rem;
+}
+
+/* Book button */
+.bookBtn {
+  text-align: center;
+  padding: 0.8rem 1rem;
+  background: #1a73e8;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin-top: auto;
+}
+
+.bookBtn:hover {
+  background: #155ec0;
+}
