@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_POST['signin'])){
         $_SESSION['user'] = $user['email'];
         $_SESSION['username'] = $user['username'];
         
-        header("location: dashboard.php");
+        header("location: bookshow.php");
         exit;
     }
 
